@@ -12,6 +12,7 @@
 		4E2F4E2E20ED704600D9E964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F4E2C20ED704600D9E964 /* Main.storyboard */; };
 		4E2F4E3020ED704800D9E964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F4E2F20ED704800D9E964 /* Assets.xcassets */; };
 		4E2F4E3320ED704800D9E964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F4E3120ED704800D9E964 /* LaunchScreen.storyboard */; };
+		4E2F4E3E20ED93D400D9E964 /* mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F4E3D20ED93D400D9E964 /* mp3 */; };
 		B3EBA3EFD9727B6A595337AF /* Pods_Pitch_Recogniser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6AC4AF13A3775FC139484E /* Pods_Pitch_Recogniser.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		4E2F4E2F20ED704800D9E964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E2F4E3220ED704800D9E964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E2F4E3420ED704800D9E964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E2F4E3D20ED93D400D9E964 /* mp3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mp3; sourceTree = "<group>"; };
 		CF535F0CF630CB4CF063E956 /* Pods-Pitch Recogniser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitch Recogniser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pitch Recogniser/Pods-Pitch Recogniser.debug.xcconfig"; sourceTree = "<group>"; };
 		DB8EB51D77795D6B41D90287 /* Pods-Pitch Recogniser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitch Recogniser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pitch Recogniser/Pods-Pitch Recogniser.release.xcconfig"; sourceTree = "<group>"; };
 		FF6AC4AF13A3775FC139484E /* Pods_Pitch_Recogniser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitch_Recogniser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 		4E2F4E2720ED704600D9E964 /* Pitch Recogniser */ = {
 			isa = PBXGroup;
 			children = (
+				4E2F4E3D20ED93D400D9E964 /* mp3 */,
 				4E2F4E2820ED704600D9E964 /* AppDelegate.swift */,
 				4E2F4E2A20ED704600D9E964 /* ViewController.swift */,
 				4E2F4E2C20ED704600D9E964 /* Main.storyboard */,
@@ -151,6 +154,7 @@
 				4E2F4E3320ED704800D9E964 /* LaunchScreen.storyboard in Resources */,
 				4E2F4E3020ED704800D9E964 /* Assets.xcassets in Resources */,
 				4E2F4E2E20ED704600D9E964 /* Main.storyboard in Resources */,
+				4E2F4E3E20ED93D400D9E964 /* mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
