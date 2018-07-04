@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E2F4E2920ED704600D9E964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F4E2820ED704600D9E964 /* AppDelegate.swift */; };
+		4E2F4E2B20ED704600D9E964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F4E2A20ED704600D9E964 /* ViewController.swift */; };
+		4E2F4E2E20ED704600D9E964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F4E2C20ED704600D9E964 /* Main.storyboard */; };
+		4E2F4E3020ED704800D9E964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F4E2F20ED704800D9E964 /* Assets.xcassets */; };
+		4E2F4E3320ED704800D9E964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F4E3120ED704800D9E964 /* LaunchScreen.storyboard */; };
+		B3EBA3EFD9727B6A595337AF /* Pods_Pitch_Recogniser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6AC4AF13A3775FC139484E /* Pods_Pitch_Recogniser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E2F4E2520ED704600D9E964 /* Pitch Recogniser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Recogniser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2F4E2820ED704600D9E964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E2F4E2A20ED704600D9E964 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E2F4E2D20ED704600D9E964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E2F4E2F20ED704800D9E964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E2F4E3220ED704800D9E964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E2F4E3420ED704800D9E964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF535F0CF630CB4CF063E956 /* Pods-Pitch Recogniser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitch Recogniser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pitch Recogniser/Pods-Pitch Recogniser.debug.xcconfig"; sourceTree = "<group>"; };
+		DB8EB51D77795D6B41D90287 /* Pods-Pitch Recogniser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pitch Recogniser.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pitch Recogniser/Pods-Pitch Recogniser.release.xcconfig"; sourceTree = "<group>"; };
+		FF6AC4AF13A3775FC139484E /* Pods_Pitch_Recogniser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pitch_Recogniser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E2F4E2220ED704600D9E964 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EBA3EFD9727B6A595337AF /* Pods_Pitch_Recogniser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320795664783DCB9DE35444F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF6AC4AF13A3775FC139484E /* Pods_Pitch_Recogniser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E2F4E1C20ED704600D9E964 = {
+			isa = PBXGroup;
+			children = (
+				4E2F4E2720ED704600D9E964 /* Pitch Recogniser */,
+				4E2F4E2620ED704600D9E964 /* Products */,
+				F92E624933554A34D140A3BF /* Pods */,
+				320795664783DCB9DE35444F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E2F4E2620ED704600D9E964 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E2F4E2520ED704600D9E964 /* Pitch Recogniser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E2F4E2720ED704600D9E964 /* Pitch Recogniser */ = {
+			isa = PBXGroup;
+			children = (
+				4E2F4E2820ED704600D9E964 /* AppDelegate.swift */,
+				4E2F4E2A20ED704600D9E964 /* ViewController.swift */,
+				4E2F4E2C20ED704600D9E964 /* Main.storyboard */,
+				4E2F4E2F20ED704800D9E964 /* Assets.xcassets */,
+				4E2F4E3120ED704800D9E964 /* LaunchScreen.storyboard */,
+				4E2F4E3420ED704800D9E964 /* Info.plist */,
+			);
+			path = "Pitch Recogniser";
+			sourceTree = "<group>";
+		};
+		F92E624933554A34D140A3BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF535F0CF630CB4CF063E956 /* Pods-Pitch Recogniser.debug.xcconfig */,
+				DB8EB51D77795D6B41D90287 /* Pods-Pitch Recogniser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E2F4E2420ED704600D9E964 /* Pitch Recogniser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E2F4E3720ED704800D9E964 /* Build configuration list for PBXNativeTarget "Pitch Recogniser" */;
+			buildPhases = (
+				3A57D83662CFECFDD12A184C /* [CP] Check Pods Manifest.lock */,
+				4E2F4E2120ED704600D9E964 /* Sources */,
+				4E2F4E2220ED704600D9E964 /* Frameworks */,
+				4E2F4E2320ED704600D9E964 /* Resources */,
+				A9F0297E5F5909F2C76DB006 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pitch Recogniser";
+			productName = "Pitch Recogniser";
+			productReference = 4E2F4E2520ED704600D9E964 /* Pitch Recogniser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E2F4E1D20ED704600D9E964 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "com.Rui Luo";
+				TargetAttributes = {
+					4E2F4E2420ED704600D9E964 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4E2F4E2020ED704600D9E964 /* Build configuration list for PBXProject "Pitch Recogniser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E2F4E1C20ED704600D9E964;
+			productRefGroup = 4E2F4E2620ED704600D9E964 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E2F4E2420ED704600D9E964 /* Pitch Recogniser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E2F4E2320ED704600D9E964 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2F4E3320ED704800D9E964 /* LaunchScreen.storyboard in Resources */,
+				4E2F4E3020ED704800D9E964 /* Assets.xcassets in Resources */,
+				4E2F4E2E20ED704600D9E964 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A57D83662CFECFDD12A184C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pitch Recogniser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9F0297E5F5909F2C76DB006 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pitch Recogniser/Pods-Pitch Recogniser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Beethoven/Beethoven.framework",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/Pitchy/Pitchy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Beethoven.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pitchy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pitch Recogniser/Pods-Pitch Recogniser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E2F4E2120ED704600D9E964 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E2F4E2B20ED704600D9E964 /* ViewController.swift in Sources */,
+				4E2F4E2920ED704600D9E964 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E2F4E2C20ED704600D9E964 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E2F4E2D20ED704600D9E964 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E2F4E3120ED704800D9E964 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E2F4E3220ED704800D9E964 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E2F4E3520ED704800D9E964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E2F4E3620ED704800D9E964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E2F4E3820ED704800D9E964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF535F0CF630CB4CF063E956 /* Pods-Pitch Recogniser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MZCU5997Q;
+				INFOPLIST_FILE = "Pitch Recogniser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Rui-Luo.Pitch-Recogniser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E2F4E3920ED704800D9E964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB8EB51D77795D6B41D90287 /* Pods-Pitch Recogniser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6MZCU5997Q;
+				INFOPLIST_FILE = "Pitch Recogniser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Rui-Luo.Pitch-Recogniser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E2F4E2020ED704600D9E964 /* Build configuration list for PBXProject "Pitch Recogniser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E2F4E3520ED704800D9E964 /* Debug */,
+				4E2F4E3620ED704800D9E964 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E2F4E3720ED704800D9E964 /* Build configuration list for PBXNativeTarget "Pitch Recogniser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E2F4E3820ED704800D9E964 /* Debug */,
+				4E2F4E3920ED704800D9E964 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E2F4E1D20ED704600D9E964 /* Project object */;
+}

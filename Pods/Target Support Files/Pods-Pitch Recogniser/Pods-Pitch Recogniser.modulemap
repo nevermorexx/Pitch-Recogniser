@@ -1,0 +1,6 @@
+framework module Pods_Pitch_Recogniser {
+  umbrella header "Pods-Pitch Recogniser-umbrella.h"
+
+  export *
+  module * { export * }
+}
