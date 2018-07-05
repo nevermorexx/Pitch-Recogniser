@@ -125,6 +125,11 @@
 				TargetAttributes = {
 					4E2F4E2420ED704600D9E964 = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -357,7 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6MZCU5997Q;
+				DEVELOPMENT_TEAM = V7F6375FTX;
 				INFOPLIST_FILE = "Pitch Recogniser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,7 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6MZCU5997Q;
+				DEVELOPMENT_TEAM = V7F6375FTX;
 				INFOPLIST_FILE = "Pitch Recogniser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
