@@ -39,8 +39,6 @@ final class ViewController: UIViewController {
 		}
 		
 		setupLayout()
-		
-		// playSound("")
 	}
 	
 	// MARK: - Action methods
@@ -76,6 +74,7 @@ final class ViewController: UIViewController {
 			player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
 			
 			guard let player = player else { return }
+			player.delegate = self
 			
 			player.play()
 			
@@ -160,6 +159,18 @@ extension ViewController: PitchEngineDelegate {
 		offsetLabel.text = "\(prefix)" + String(format:"%.2f", absOffsetPercentage) + "%"
 		offsetLabel.textColor = color
 		offsetLabel.isHidden = false
+		
+		if (shouldPlayMusic(note: pitch.note.string)) {
+			pitchEngine.stop()
+			playSound("")
+		}
+	}
+	
+	func shouldPlayMusic(note: String) -> Bool {
+		if (note == "E4") {
+			return true
+		}
+		return false
 	}
 	
 	func pitchEngine(_ pitchEngine: PitchEngine, didReceiveError error: Error) {
@@ -171,4 +182,11 @@ extension ViewController: PitchEngineDelegate {
 	}
 }
 
+
+extension ViewController: AVAudioPlayerDelegate {
+	func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+		print ("Finished playing")
+		pitchEngine.start()
+	}
+}
 
