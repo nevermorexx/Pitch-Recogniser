@@ -14,40 +14,10 @@ import AVFoundation
 final class ViewController: UIViewController {
 	var player: AVAudioPlayer?
 	
-	lazy var noteLabel: UILabel = {
-		let label = UILabel()
-		label.text = "--"
-		label.font = UIFont.boldSystemFont(ofSize: 65)
-		label.textColor = UIColor(hex: "DCD9DB")
-		label.textAlignment = .center
-		label.numberOfLines = 0
-		label.sizeToFit()
-		return label
-	}()
-	
-	lazy var offsetLabel: UILabel = {
-		let label = UILabel()
-		label.font = UIFont.systemFont(ofSize: 28)
-		label.textColor = UIColor.white
-		label.textAlignment = .center
-		label.numberOfLines = 0
-		label.sizeToFit()
-		return label
-	}()
-	
-	lazy var actionButton: UIButton = { [unowned self] in
-		let button = UIButton(type: .system)
-		button.layer.cornerRadius = 20
-		button.backgroundColor = UIColor(hex: "3DAFAE")
-		button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-		button.setTitleColor(UIColor.white, for: UIControlState())
-		
-		button.addTarget(self, action: #selector(ViewController.actionButtonDidPress(_:)),
-						 for: .touchUpInside)
-		button.setTitle("Start".uppercased(), for: UIControlState())
-		
-		return button
-		}()
+	@IBOutlet weak var noteLabel: UILabel!
+	@IBOutlet weak var frequencyLabel: UILabel!
+	@IBOutlet weak var offsetLabel: UILabel!
+	@IBOutlet weak var actionButton: UIButton!
 	
 	lazy var pitchEngine: PitchEngine = { [weak self] in
 		let config = Config(estimationStrategy: .yin)
@@ -86,6 +56,7 @@ final class ViewController: UIViewController {
 			: UIColor(hex: "E13C6C")
 		
 		noteLabel.text = "--"
+		frequencyLabel.text = "-- Hz"
 		pitchEngine.active ? pitchEngine.stop() : pitchEngine.start()
 		offsetLabel.isHidden = !pitchEngine.active
 	}
@@ -116,28 +87,35 @@ final class ViewController: UIViewController {
 	// MARK: - Layout
 	
 	func setupLayout() {
-		let totalSize = UIScreen.main.bounds
 		
-		constrain(actionButton, noteLabel, offsetLabel) {
-			actionButton, noteLabel, offsetLabel in
-			
-			let superview = actionButton.superview!
-			
-			actionButton.top == superview.top + (totalSize.height - 30) / 2
-			actionButton.centerX == superview.centerX
-			actionButton.width == 280
-			actionButton.height == 50
-			
-			offsetLabel.bottom == actionButton.top - 60
-			offsetLabel.leading == superview.leading
-			offsetLabel.trailing == superview.trailing
-			offsetLabel.height == 80
-			
-			noteLabel.bottom == offsetLabel.top - 20
-			noteLabel.leading == superview.leading
-			noteLabel.trailing == superview.trailing
-			noteLabel.height == 80
-		}
+		noteLabel.text = "--"
+		noteLabel.font = UIFont.boldSystemFont(ofSize: 65)
+		noteLabel.textColor = UIColor(hex: "DCD9DB")
+		noteLabel.textAlignment = .center
+		noteLabel.numberOfLines = 0
+		noteLabel.sizeToFit()
+		
+		frequencyLabel.text = "-- Hz"
+		frequencyLabel.font = UIFont.boldSystemFont(ofSize: 45)
+		frequencyLabel.textColor = UIColor(hex: "FF5733")
+		frequencyLabel.textAlignment = .center
+		frequencyLabel.numberOfLines = 0
+		frequencyLabel.sizeToFit()
+		
+		offsetLabel.font = UIFont.systemFont(ofSize: 28)
+		offsetLabel.textColor = UIColor.white
+		offsetLabel.textAlignment = .center
+		offsetLabel.numberOfLines = 0
+		offsetLabel.sizeToFit()
+		
+		actionButton.layer.cornerRadius = 20
+		actionButton.backgroundColor = UIColor(hex: "3DAFAE")
+		actionButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+		actionButton.setTitleColor(UIColor.white, for: UIControlState())
+		
+		actionButton.addTarget(self, action: #selector(ViewController.actionButtonDidPress(_:)),
+						 for: .touchUpInside)
+		actionButton.setTitle("Start".uppercased(), for: UIControlState())
 	}
 	
 	// MARK: - UI
@@ -168,6 +146,9 @@ extension ViewController: PitchEngineDelegate {
 		let absOffsetPercentage = abs(offsetPercentage)
 		
 		print("pitch : \(pitch.note.string) - percentage : \(offsetPercentage)")
+		print("frequency: \(pitch.frequency)")
+		
+		frequencyLabel.text = "\(pitch.frequency.rounded()) Hz"
 		
 		guard absOffsetPercentage > 1.0 else {
 			return
